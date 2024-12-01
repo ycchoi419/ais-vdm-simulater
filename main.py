@@ -2,12 +2,13 @@ import asyncio
 import yaml
 from app.vdm_creater import vdmCreator
 from geographiclib.geodesic import Geodesic
+from config import REDIS, TARGET, APP
 
 async def main() -> None:
     geod = Geodesic.WGS84
 
-    target_ip = "10.0.100.20"
-    target_port = "6501"
+    target_ip   = TARGET["host"]
+    target_port = TARGET["port"]
     
     vdm_creator = vdmCreator(target_ip, target_port)
 
@@ -26,6 +27,7 @@ async def main() -> None:
             args['lat'], args['lon'] = result['lat2'], result['lon2']
             
             await asyncio.sleep(args["send_period"])
+            print("target_host:", target_ip, "target_port:", target_port)
 
     # Create tasks for N ships
     create_tasks = [

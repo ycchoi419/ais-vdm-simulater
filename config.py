@@ -5,7 +5,7 @@ APP["period"] = int(os.getenv("PERIOD", "1"))
 
 # redis configurations
 REDIS = {
-    "host": str(os.getenv("REDIS_IP", "10.0.100.20")),
+    "host": str(os.getenv("REDIS_HOST", "10.0.100.20")),
     "port": int(os.getenv("REDIS_PORT", "6379")),
 }
 

@@ -11,6 +11,10 @@ services:
         max-size: "50m"
         max-file: "5"
     environment:
+      # Redis Settings
+      REDIS_HOST   : 10.0.100.20  # Redis Host. Default is 10.0.100.20
+      REDIS_PORT   : 6379         # Redis Port. Default is 6379
+      # Target settings
       TARGET_HOST  : 192.168.1.98  # Host, which receives VDM msg. Default is 10.0.100.20
       TARGET_PORT  : 6503          # Port. Default is 6503 
       SEND_PERIOD  : 2             # Sending period [sec]

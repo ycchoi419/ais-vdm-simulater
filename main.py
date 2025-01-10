@@ -12,7 +12,7 @@ async def main() -> None:
     
     vdm_creator = vdmCreator(target_ip, target_port)
 
-    with open("tgt-setting.yaml", encoding="UTF-8") as f:
+    with open("config/tgt-setting.yaml", encoding="UTF-8") as f:
         target_ship = yaml.load(f, Loader=yaml.FullLoader)
     
     # Define a function for repeated execution

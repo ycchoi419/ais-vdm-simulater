@@ -1,8 +1,8 @@
 test_ship1:
   course: 90
   distance: 2
-  lat: 31.4045
-  lon: 135.0338
+  lat: 34.43
+  lon: 137.016
   mmsi: 123456781
   send_period: 2
   speed: 10
@@ -10,10 +10,10 @@ test_ship1:
     create_time: 0
     end_time: 10
 test_ship2:
-  course: 90
+  course: 180
   distance: 2
-  lat: 31.5492
-  lon: 135.1462
+  lat: 34.43
+  lon: 137.016
   mmsi: 123456782
   send_period: 2
   speed: 10
@@ -21,10 +21,10 @@ test_ship2:
     create_time: 0
     end_time: 10
 test_ship3:
-  course: 90
+  course: 270
   distance: 2
-  lat: 31.5761
-  lon: 135.1799
+  lat: 34.53
+  lon: 137.016
   mmsi: 123456783
   send_period: 2
   speed: 10
@@ -32,10 +32,10 @@ test_ship3:
     create_time: 0
     end_time: 10
 test_ship4:
-  course: 90
+  course: 350
   distance: 2
-  lat: 31.5038
-  lon: 135.1889
+  lat: 34.53
+  lon: 137.016
   mmsi: 123456784
   send_period: 2
   speed: 10
